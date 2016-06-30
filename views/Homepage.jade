@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Richard Wen
+    link(href='https://fonts.googleapis.com/css?family=Alegreya:400,700,900', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    link(rel='icon', type='image/ico', href='/images/greenfalco.ico')
+    script.
+        document.createElement("article");
+        document.createElement("aside");
+        document.createElement("footer");
+        document.createElement("header");
+        document.createElement("main");
+        document.createElement("nav");
+        document.createElement("section");
+  body
+    header.banner
+      h1 Richard Wen
+      p UCLA Undergraduate Computer Science
+      ul.topnav
+        li
+          a(href='/') Home
+        li
+          a(href='/images/RichardWen_Resume.docx' download) CV
+        li
+          a(href='/About') Stock Charts Project
+    main
+      section.portrait
+        img.img-circle(src='/images/profile.jpg', alt='some_text', style='float:left;')
+      section.text
+        p Hi my name is Richard Wen!
+        p I am a computer science undergrad from UCLA and this is my personal website. I have just finished my first year of college and am currently spending the summer improving my programming skills. Check out my prediction web app above or my Github below to see a bit of what I'm currently working on.
+      section.link
+        a(href='https://github.com/RichardWen')
+            img.img-circle(src='/images/github.png')
+        a(href='https://www.linkedin.com/in/richard-wen-70595bb9')
+            img.img-circle(src='/images/linkedin.png')
+    footer
+      h2 Contact
+      p
+      u E-mail:
+      b &nbsp richardwen01@gmail.com &nbsp
+      u Phone Number:
+      b &nbsp 425-466-0042
+

@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+  display: block;
+}
+
+html, body, h1, h2, h3, ul, li, a, p,
+article, aside, footer, header, main, nav, portrait, section {
+  padding: 0;
+  margin: 0;
+}
+
+.banner {
+  background-color: #413435;
+  color: white;
+  font-size: 25px;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 100%;
+  padding:15px 20px;
+  position:fixed;
+  z-index: 1;
+}
+
+body {
+  width: 960px;
+  height: 100%;
+  margin-left: auto;
+  background-image: url("/images/subtle_white_feathers.png");
+  margin-right: auto;
+  font-family: 'Alegreya', serif;
+  font-size: 15px;
+
+}
+
+nav {
+  background-color: #000000;
+  padding: 5px;
+  margin-top: 1px;
+}
+
+li a {
+  color: white;
+}
+
+li {
+  display: inline;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+section {
+  position:relative;
+  color: white;
+  top: 275px;
+}
+
+.link {
+    align: center;
+    top: 290px;
+    left: 40%;
+    margin-left: 25px;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+.portrait {
+   align:center;
+   left : 20%;
+}
+.text
+{
+    align:center
+    width: 200%;
+    left: 30%;
+    color: #413435;
+    font-size: 36px;
+}
+.img-circle {
+   padding:3px;
+   border:3px solid #413435;
+   border-radius: 50%;
+}
+
+article {
+  background-color: #BEB283;
+  border-radius: 25px;
+  margin-top: 5px;
+  padding: 10px 15px;
+  background-size:100%;
+
+}
+h3
+{
+    font-size: 200%;
+    color: #413435;
+    text-align: center;
+}
+main {
+  width: 640px;
+  float: left;
+  margin-bottom: 10px;
+  z-index: 0;
+}
+
+aside {
+  position:relative;
+  background-color: #BEB283;
+  color: white;
+  border-radius: 25px;
+  padding: 20px;
+  top: 175px;
+  margin-top: 25px;
+  float: left;
+}
+
+footer {
+  clear: both;
+  background-color: #413435;
+  color: white;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  z-index: 1;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-button {
+    width: 8px;
+    height:5px;
+}
+::-webkit-scrollbar-track {
+    background:#eee;
+    border: thin solid lightgray;
+    box-shadow: 0px 0px 3px #dfdfdf inset;
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+    background:#999;
+    border: thin solid gray;
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:#7d7d7d;
+}
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #BEB283;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
